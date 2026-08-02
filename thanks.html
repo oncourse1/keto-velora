@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>وصلك كورسك المجاني 🌸 | Velora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700;800&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --wine:#3E1F2B; --wine-deep:#2A1420; --blush:#EFB6C4; --blush-soft:#F7DCE3;
+    --cream:#FBF3ED; --paper:#FEFBF8; --sage:#7C9473; --sage-deep:#5E7455;
+    --muted:#8a6f78; --line:#ecdde1;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:'Cairo', sans-serif; background:var(--cream); color:var(--wine-deep); line-height:1.85;}
+  h1,h2,h3{font-family:'El Messiri', sans-serif; font-weight:800;}
+  a{color:inherit;}
+  .wrap{max-width:720px; margin:0 auto; padding:0 22px;}
+
+  /* redirect banner */
+  .redirect-bar{
+    position:sticky; top:0; z-index:50; background:var(--wine-deep); color:#fff;
+    padding:12px 18px; font-size:13.5px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
+  }
+  .redirect-bar b{color:var(--blush);}
+  .redirect-bar button{
+    background:var(--blush); color:var(--wine-deep); border:none; font-weight:700; font-size:12.5px;
+    padding:7px 14px; border-radius:16px; cursor:pointer;
+  }
+
+  .hero{background:var(--wine-deep); color:#fff; text-align:center; padding:50px 0 44px;}
+  .hero .check{
+    width:60px; height:60px; border-radius:50%; background:var(--blush); color:var(--wine-deep);
+    display:flex; align-items:center; justify-content:center; font-size:28px; margin:0 auto 18px;
+  }
+  .hero h1{font-size:clamp(24px,4vw,32px); margin-bottom:12px;}
+  .hero p{color:var(--blush-soft); font-size:15.5px; max-width:480px; margin:0 auto;}
+
+  section{padding:46px 0;}
+  .section-head{margin-bottom:26px;}
+  .section-head .kicker{color:var(--muted); font-weight:700; font-size:13px; margin-bottom:8px; display:flex; align-items:center; gap:8px;}
+  .section-head .kicker::before{content:''; width:20px; height:3px; background:var(--blush); border-radius:2px;}
+  .section-head h2{font-size:22px; color:var(--wine-deep);}
+
+  .lesson{
+    background:#fff; border:1px solid var(--line); border-radius:16px; padding:22px 24px; margin-bottom:14px;
+  }
+  .lesson .tag{
+    display:inline-block; background:var(--blush-soft); color:var(--wine-deep); font-size:12px; font-weight:700;
+    padding:4px 12px; border-radius:12px; margin-bottom:10px;
+  }
+  .lesson h3{font-size:17px; margin-bottom:8px;}
+  .lesson p{color:#4a3841; font-size:14.5px;}
+  .lesson ul{margin:8px 18px 0 0; color:#4a3841; font-size:14.5px;}
+  .lesson li{margin-bottom:4px;}
+
+  .cta-box{
+    background:var(--blush); border-radius:20px; padding:32px; text-align:center; margin-top:36px;
+  }
+  .cta-box h2{font-size:21px; margin-bottom:10px; color:var(--wine-deep);}
+  .cta-box p{color:#7a4757; font-size:14.5px; margin-bottom:20px;}
+  .btn-primary{
+    display:inline-flex; align-items:center; gap:8px; background:var(--wine-deep); color:#fff;
+    font-family:'El Messiri'; font-weight:800; font-size:16px; padding:14px 26px; border-radius:30px; text-decoration:none;
+  }
+
+  .whatsapp-note{
+    display:flex; align-items:center; gap:12px; background:var(--paper); border:1px solid var(--line);
+    border-radius:14px; padding:16px 18px; margin-top:30px; font-size:13.5px; color:var(--muted);
+  }
+
+  footer{text-align:center; padding:26px 0; font-size:12.5px; color:var(--muted);}
+</style>
+</head>
+<body>
+
+<div class="redirect-bar">
+  <span>راح ننقلك تلقائيًا لصفحة كورس الكيتو الكامل خلال <b id="countdown">15</b> ثانية ⏳</span>
+  <button onclick="cancelRedirect()">إلغاء التحويل</button>
+</div>
+
+<div class="hero">
+  <div class="check">✓</div>
+  <h1>وصلك كورسك المجاني، يا حبيبة قلبي 🌸</h1>
+  <p>هذي أول 4 دروس من رحلتك مع الكيتو — اقرئيها الحين، وبعدها بنوريك الطريق الكامل لجسمك الجديد.</p>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">دروسك المجانية</div>
+      <h2>مقدمة مبسّطة عن الكيتو دايت</h2>
+    </div>
+
+    <div class="lesson">
+      <span class="tag">الدرس ١</span>
+      <h3>وش هو الكيتو وكيف يخليك تحرقين دهونك؟</h3>
+      <p>الكيتو دايت نظام غذائي يعتمد على تقليل الكربوهيدرات ورفع نسبة الدهون الصحية، عشان يدخل جسمك بحالة تسمى "الكيتوسس" — يعني جسمك يبدأ يحرق الدهون المخزّنة كمصدر طاقة بدل السكر. هذا اللي يخلي الوزن ينزل بشكل ملحوظ من أول أسابيع الالتزام.</p>
+    </div>
+
+    <div class="lesson">
+      <span class="tag">الدرس ٢</span>
+      <h3>الأكل المسموح والممنوع (نظرة سريعة)</h3>
+      <ul>
+        <li><strong>مسموح:</strong> اللحوم، الدجاج، السمك، البيض، الجبن، الخضار الورقية، الزيوت الصحية، المكسرات.</li>
+        <li><strong>ممنوع أو محدود جدًا:</strong> الأرز، الخبز، السكر، المعجنات، الفواكه العالية بالسكر، المشروبات الغازية.</li>
+      </ul>
+      <p style="margin-top:10px;">بالكورس الكامل بتلقين قائمة تفصيلية بكل شي مسموح وممنوع، بالكميات المناسبة.</p>
+    </div>
+
+    <div class="lesson">
+      <span class="tag">الدرس ٣</span>
+      <h3>عيّنة من جدول يوم كيتو واحد</h3>
+      <p><strong>فطور:</strong> بيض مقلي بالزبدة + أفوكادو<br>
+      <strong>غدا:</strong> صدر دجاج مشوي + سلطة خضار ورقية بزيت زيتون<br>
+      <strong>عشا:</strong> سمك مشوي + بروكلي بالزبدة</p>
+      <p style="margin-top:10px;">بالكورس الكامل بتلقين جدول أسبوع كامل بوصفات متنوعة وسهلة.</p>
+    </div>
+
+    <div class="lesson">
+      <span class="tag">الدرس ٤</span>
+      <h3>أخطاء تقع فيها أغلب المبتدئات بأول الكيتو</h3>
+      <p>أشهر خطأ هو الدخول بالكيتو بدون تجهيز جسمك تدريجيًا، وهذا يسبب "أعراض الكيتو" (صداع، تعب، دوخة بأول أيام). بالكورس الكامل بنشرح لك خطوة بخطوة كيف تتجنبين هالأعراض من البداية، وكيف تثبّتين وزنك بعد ما توصلين لهدفك.</p>
+    </div>
+
+    <div class="cta-box">
+      <h2>جاهزة تكملين رحلتك كاملة؟</h2>
+      <p>الجداول الكاملة، الوصفات، حلول الأعراض، ومتابعة كل خطوة — كلها بانتظارك بكورس "رحلتك مع الكيتو" (79.99$ ≈ 300 ريال، تقدرين تقسّطينها على دفعتين).</p>
+      <a class="btn-primary" id="ctaBtn" href="#" target="_blank" rel="noopener">أبي أكمل رحلتي الكاملة ↗</a>
+    </div>
+
+    <div class="whatsapp-note">
+      💬 لو عندك أي سؤال عن الدروس أو الكورس، تقدرين تتواصلين معانا واتساب: <strong dir="ltr">+963 982983100</strong>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Velora — جميع الحقوق محفوظة</footer>
+
+<script>
+  // ⚠️ عدّلي هذا الرابط لرابط صفحة بيع الكورس المدفوع النهائي عندك
+  const SALES_PAGE_URL = "https://oncourse1.github.io/keto-velora/";
+
+  document.getElementById('ctaBtn').href = SALES_PAGE_URL;
+
+  let seconds = 15;
+  let cancelled = false;
+  const el = document.getElementById('countdown');
+
+  function cancelRedirect(){
+    cancelled = true;
+    document.querySelector('.redirect-bar').style.display = 'none';
+  }
+
+  const timer = setInterval(() => {
+    if (cancelled) { clearInterval(timer); return; }
+    seconds -= 1;
+    el.textContent = seconds;
+    if (seconds <= 0) {
+      clearInterval(timer);
+      window.location.href = SALES_PAGE_URL;
+    }
+  }, 1000);
+</script>
+
+</body>
+</html>
